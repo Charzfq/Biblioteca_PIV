@@ -12,7 +12,7 @@ namespace Biblioteca.Consola
     {
         static void Main(string[] args)
         {
-            using (var context = new BibliotecaContext("BibliotecaMaestro"))
+            using (var context = new BibliotecaContext("BibliotecaLocal"))
             {
                 var nuevoLibro = new Libro();
                 nuevoLibro.Nombre = "Otro libro";

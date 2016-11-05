@@ -50,13 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BibliotecaContext.cs" />
-    <Compile Include="Migrations\201610292037277_initialCreate.cs" />
-    <Compile Include="Migrations\201610292037277_initialCreate.Designer.cs">
-      <DependentUpon>201610292037277_initialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610292057187_agregarEditorial.cs" />
-    <Compile Include="Migrations\201610292057187_agregarEditorial.Designer.cs">
-      <DependentUpon>201610292057187_agregarEditorial.cs</DependentUpon>
+    <Compile Include="Migrations\201611051745501_InitialCreate.cs" />
+    <Compile Include="Migrations\201611051745501_InitialCreate.Designer.cs">
+      <DependentUpon>201611051745501_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Modelos\Editorial.cs" />
@@ -68,11 +64,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201610292037277_initialCreate.resx">
-      <DependentUpon>201610292037277_initialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610292057187_agregarEditorial.resx">
-      <DependentUpon>201610292057187_agregarEditorial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611051745501_InitialCreate.resx">
+      <DependentUpon>201611051745501_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

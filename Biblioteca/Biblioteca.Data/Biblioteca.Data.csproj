@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90E1C089-54C3-4747-8F2E-2AE95CF3561E}</ProjectGuid>
+    <ProjectGuid>{DA8DF7D8-FD81-49F8-BB63-0548A4AC7BBA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Biblioteca.Data</RootNamespace>
@@ -50,12 +50,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BibliotecaContext.cs" />
+    <Compile Include="Migrations\201610292037277_initialCreate.cs" />
+    <Compile Include="Migrations\201610292037277_initialCreate.Designer.cs">
+      <DependentUpon>201610292037277_initialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610292057187_agregarEditorial.cs" />
+    <Compile Include="Migrations\201610292057187_agregarEditorial.Designer.cs">
+      <DependentUpon>201610292057187_agregarEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Modelos\Editorial.cs" />
     <Compile Include="Modelos\Libro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201610292037277_initialCreate.resx">
+      <DependentUpon>201610292037277_initialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610292057187_agregarEditorial.resx">
+      <DependentUpon>201610292057187_agregarEditorial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

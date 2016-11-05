@@ -7,9 +7,16 @@ using System.Data.Entity;
 using Biblioteca.Data.Modelos;
 
 namespace Biblioteca.Data
-
-    public class BibliotecaContext: DbContext//Esta es nuestra base de datos.
+{
+    public class BibliotecaContext: DbContext
     {
-        public DbSet<Libro>Libros { get; set; }
+        public BibliotecaContext() { }
+        public BibliotecaContext(string ConnectionName):base(ConnectionName)
+        {
+
+        }
+
+        public DbSet<Libro> Libros { get; set; }
+        public DbSet<Editorial> Editoriales { get; set; }
     }
 }
